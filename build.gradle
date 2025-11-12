@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // REST Assured Dependency
+    implementation 'io.rest-assured:rest-assured:5.3.0'
+
+    // JSON Parsing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
+    // JUnit for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
